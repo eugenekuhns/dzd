@@ -1,11 +1,47 @@
 @import compass/reset
+@import url('https://fonts.googleapis.com/css?family=Roboto')
 
 $zappiGrey: #4c4949
+$font-family: 'Roboto', sans-serif
+
+body
+	background-color: $zappiGrey
 
 .navbar
 	background-color: $zappiGrey 
 	padding-right: -15px
 	padding-left: -15px
+	margin-bottom: 0
 
 .logo
 	width: 40%
+
+.main-bk
+	background: url(../img/main-bk.png) top right repeat-x
+	background-size: 108vh
+	min-height: 100vh
+
+.homepage
+	padding-top: 40vh
+	color: white
+	width: 62%
+	margin-left: 30%
+	margin-right: 5%
+	h1
+		font-family: $font-family
+		font-size: 12px
+	h2
+		margin-top: 1.25em
+		font-family: $font-family
+		font-size: 14px
+		letter-spacing: 3px
+		line-height: 1.5
+		text-transform: uppercase
+	button
+		font-family: $font-family
+		margin-top: 3em
+		background: none
+		border: 1px solid white
+
+em
+	font-style: italic
