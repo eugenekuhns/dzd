@@ -13,6 +13,9 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="css/screen.css">
 </head>
 
@@ -22,50 +25,159 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <a id="home"></a>
     <div class="container-fluid">
       <div class="row no-gutter">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#"><img src="img/logo.svg" class="d-inline-block align-top img-responsive logo" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Work</a>
-              <a class="nav-item nav-link" href="#">About</a>
-              <a class="nav-item nav-link disabled" href="#">Contact</a>
+        <div class="col-lg-9 col-lg-offset-3">
+
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" class="d-inline-block align-top img-responsive logo" alt=""></a>
+              </div>
+              
+              <div class="collapse navbar-collapse" id="myNavbar">
+
+                <div class="row">
+
+                  <div class="col-md-8">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#about">About</a></li> 
+                      <li><a href="#work">Work</a></li>
+                      <li><a href="#contact">Contact</a></li> 
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>      
+        </div>
       </div><!-- /row -->
 
       <div class="row no-gutter main-bk">
-        
+
         <div class="homepage">
-          <h1>Doug Zappi <em>Dzign</em></h1>
-          <h2>Delivering Creative Solutions</h2>
-          <button type="button" class="btn btn-light">Learn More</button>
+          <h1>Doug Zappi <strong><em>Dzign</em></strong></h1>
+          <h2>Delivering <br />Creative Solutions</h2>
+          <div class="learn-more">
+            <a href="#about"><button type="button" class="btn btn-light">Learn More</button></a>
+            <div class="arrow bounce"><i class="fas fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /main-bk -->
+
+      <a id="about"></a>
+
+      <div class="row">
+        
+        <div class="work-intro col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+          <p class="text-center">We’re passionate about what we do, and it shows. Our work encompasses all areas of visual communications including: complete identity programs, corporate sales and marketing collateral, annual reports, websites, environmental and exhibit graphics, packaging systems and print advertising.</p>
+          <p class="text-center callout text-uppercase"><span>DZD</span> IN HOUSE</p>
+          <p class="text-center">In addition, we partner with in-house design teams, agencies and entrepreneurs. This partnership provides your business with design and creative direction thats an extension of your team to create the strongest possible communications.</p>
+        </div>
+      </div><!-- /row -->
+
+      <a id="work"></a>
+
+      <div class="work-pieces row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+          <h1>Concordia Lutheran Ministries</h1>
+          <h2>Annual Report/Publication Design</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/concordia-annual-report.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+              <img src="img/concordia-annual-report-2.png" alt="" class="img-responsive">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-offset-1 col-xs-10 col-md-6 col-md-offset-0">
+          <h1>The Warwick Hotel</h1>
+          <h2>Corporate Literature</h2>
+          <img src="img/concordia-annual-report-2.png" alt="" class="img-responsive">
+        </div>
+        
+        <div class="col-xs-offset-1 col-xs-10 col-md-6 col-md-offset-0 clearfix">
+          <h1>Crown Casting Industries</h1>
+          <h2>Corporate Logo</h2>
+          <img src="img/crown-casting.png" alt="" class="img-responsive">
+        </div>
+        <div class="col-xs-offset-1 col-xs-10 col-md-6 col-md-offset-0">
+          <h1>Sea &amp; Shoreline</h1>
+          <h2>Corporate Logo</h2>
+          <img src="img/sea-&-shoreline.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      </div><!-- /work-pieces --><!-- /row -->
+
+
+      <a id="contact"></a>
+
+      
+      <div class="contact row">
+        <div class="contact-intro col-xs-12 col-md-4">
+          <div class="col-xs-12">
+            <h3 class="col-xs-offset-1 text-uppercase">Phone</h3>
+            <div class="row">
+              <div class="col-xs-offset-1 col-xs-2">
+                <img src="img/icon-phone.svg" alt="" class="img-responsive">
+              </div>
+              <div class="col-xs-8">
+                <p><em>724.352.3159</em></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <h3 class="col-xs-offset-1 text-uppercase">Email</h3>
+            <div class="row">
+              <div class="col-xs-offset-1 col-xs-2">
+                <img src="img/icon-email.svg" alt="" class="img-responsive">
+              </div>
+              <div class="col-xs-8">
+                <p><a href="mailto:info@dzdzign.net"><em>info@dzdzign.net</em></a></p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /contact-intro -->
+      </div><!-- /contact --><!-- /row -->
+
+
+      <div class="row footer">
+        <div class="col-cx-10 col-offset-1">
+          <p class="text-center">222 Keasey Road, Cabot, PA 16023
+            <br />724.352.3159
+            <br /><a href="mailto:info@dzdzign.net">info@dzdzign.net</a></p>
+          </div>
         </div>
 
-      </div>
-    </div><!-- /container fluid -->
+
+      </div><!-- /container fluid -->
 
 
-    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
+      <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+      <script src="js/plugins.js"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  </body>
+      <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+      <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+      </script>
+      <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
 
-  </html>
+    </html>

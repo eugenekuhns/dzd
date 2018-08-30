@@ -25,26 +25,109 @@ a img { border: none; }
 /* line 116, ../../../../../../.rvm/gems/ruby-2.4.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-/* line 7, ../sass/screen.sass */
-body { background-color: #4c4949; }
-
 /* line 10, ../sass/screen.sass */
-.navbar { background-color: #4c4949; padding-right: -15px; padding-left: -15px; margin-bottom: 0; }
+em { font-style: italic; }
 
-/* line 16, ../sass/screen.sass */
-.logo { width: 40%; }
+/* line 12, ../sass/screen.sass */
+strong { font-weight: bold; }
+
+/* line 15, ../sass/screen.sass */
+body { background-color: #4c4949; font-family: "Roboto", sans-serif; }
 
 /* line 19, ../sass/screen.sass */
-.main-bk { background: url(../img/main-bk.png) top right repeat-x; background-size: 108vh; min-height: 100vh; }
+.navbar-inverse { border: none; }
+/* line 21, ../sass/screen.sass */
+.navbar-inverse .navbar-toggle { border: none; }
 
 /* line 24, ../sass/screen.sass */
-.homepage { padding-top: 40vh; color: white; width: 62%; margin-left: 30%; margin-right: 5%; }
-/* line 30, ../sass/screen.sass */
-.homepage h1 { font-family: "Roboto", sans-serif; font-size: 12px; }
-/* line 33, ../sass/screen.sass */
-.homepage h2 { margin-top: 1.25em; font-family: "Roboto", sans-serif; font-size: 14px; letter-spacing: 3px; line-height: 1.5; text-transform: uppercase; }
-/* line 40, ../sass/screen.sass */
-.homepage button { font-family: "Roboto", sans-serif; margin-top: 3em; background: none; border: 1px solid white; }
+.navbar { background-color: #4c4949; margin-bottom: 0; padding: 1em 0; }
 
-/* line 46, ../sass/screen.sass */
-em { font-style: italic; }
+/* line 29, ../sass/screen.sass */
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover { background-color: #4c4949 !important; }
+
+/* line 32, ../sass/screen.sass */
+.navbar-collapse { margin-top: 1em; }
+
+/* line 35, ../sass/screen.sass */
+.navbar-brand { width: 40%; }
+
+/* line 38, ../sass/screen.sass */
+.main-bk { background: url(../img/main-bk.png) top right repeat-x; background-size: 108vh; min-height: 88vh; }
+
+@media (min-width: 768px) { /* line 44, ../sass/screen.sass */
+  .main-bk { background-position: top center; min-height: 82vh; }
+  /* line 47, ../sass/screen.sass */
+  .navbar-collapse { margin-top: 0; }
+  /* line 49, ../sass/screen.sass */
+  .navbar-brand { width: auto; }
+  /* line 51, ../sass/screen.sass */
+  .navbar-brand img { width: 40%; } }
+/* line 54, ../sass/screen.sass */
+.homepage { padding-top: 40vh; color: white; width: 62%; margin-left: 30%; margin-right: 5%; position: relative; }
+/* line 61, ../sass/screen.sass */
+.homepage h1 { font-size: 12px; }
+/* line 63, ../sass/screen.sass */
+.homepage h2 { margin-top: 1.25em; font-size: 14px; letter-spacing: 3px; line-height: 1.5; text-transform: uppercase; }
+
+/* line 70, ../sass/screen.sass */
+.learn-more { position: relative; width: 25%; }
+/* line 73, ../sass/screen.sass */
+.learn-more a { color: white; }
+/* line 75, ../sass/screen.sass */
+.learn-more button { text-transform: uppercase; letter-spacing: 2px; margin-top: 3em; background: none; border: 1px solid white; }
+/* line 81, ../sass/screen.sass */
+.learn-more button:hover { background-color: white; }
+
+/* line 84, ../sass/screen.sass */
+.work-intro { padding-bottom: 2em; }
+/* line 86, ../sass/screen.sass */
+.work-intro p { color: white; margin-top: 1em; line-height: 1.5; }
+/* line 90, ../sass/screen.sass */
+.work-intro p:last-of-type { margin-bottom: 1em; }
+/* line 92, ../sass/screen.sass */
+.work-intro .callout { font-size: 1.5em; }
+/* line 94, ../sass/screen.sass */
+.work-intro .callout > span { color: #f36c33; }
+
+/* line 97, ../sass/screen.sass */
+.work-pieces { background-color: white; padding-top: 1em; padding-bottom: 1em; border-left: 1px solid #8dc63f; border-right: 1px solid #8dc63f; border-bottom: 1px solid #8dc63f; }
+/* line 105, ../sass/screen.sass */
+.work-pieces h1 { font-size: 1.5em; color: #4c4949; font-weight: normal; }
+/* line 109, ../sass/screen.sass */
+.work-pieces h2 { font-size: 0.875em; color: #f36c33; }
+/* line 112, ../sass/screen.sass */
+.work-pieces img { margin: 1em auto; }
+/* line 114, ../sass/screen.sass */
+.work-pieces img:first-of-type { margin-bottom: 0; }
+/* line 116, ../sass/screen.sass */
+.work-pieces img + img { margin-top: 0; }
+/* line 118, ../sass/screen.sass */
+.work-pieces img:last-of-type { margin-bottom: 3em; }
+
+/* line 121, ../sass/screen.sass */
+.contact { background-color: #e0dfdf; padding: 2em 0; }
+
+/* line 127, ../sass/screen.sass */
+.contact-intro .col-xs-12:first-of-type { margin-bottom: 1.5em; }
+/* line 129, ../sass/screen.sass */
+.contact-intro h3 { font-size: 0.875em; color: #8e8a88; margin-bottom: 0.5em; }
+
+/* line 134, ../sass/screen.sass */
+.footer { margin: 2em auto; }
+/* line 136, ../sass/screen.sass */
+.footer p { color: white; line-height: 2; }
+
+@-moz-keyframes bounce { 0%, 20%, 50%, 80%, 100% { -moz-transform: translateY(0); transform: translateY(0); }
+  40% { -moz-transform: translateY(-30px); transform: translateY(-30px); }
+  60% { -moz-transform: translateY(-15px); transform: translateY(-15px); } }
+@-webkit-keyframes bounce { 0%, 20%, 50%, 80%, 100% { -webkit-transform: translateY(0); transform: translateY(0); }
+  40% { -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+  60% { -webkit-transform: translateY(-15px); transform: translateY(-15px); } }
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% { -moz-transform: translateY(0); -ms-transform: translateY(0); -webkit-transform: translateY(0); transform: translateY(0); }
+  40% { -moz-transform: translateY(-30px); -ms-transform: translateY(-30px); -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+  60% { -moz-transform: translateY(-15px); -ms-transform: translateY(-15px); -webkit-transform: translateY(-15px); transform: translateY(-15px); } }
+/* line 148, ../sass/screen.sass */
+.arrow { color: white; position: absolute; top: 16vh; left: 50%; margin-left: -25%; width: 40px; height: 40px; }
+
+/* line 157, ../sass/screen.sass */
+.bounce { -moz-animation: bounce 2s infinite; -webkit-animation: bounce 2s infinite; animation: bounce 2s infinite; }
