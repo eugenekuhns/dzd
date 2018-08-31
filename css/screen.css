@@ -59,7 +59,7 @@ body { background-color: #4c4949; font-family: "Roboto", sans-serif; }
   /* line 47, ../sass/screen.sass */
   .navbar-collapse { margin-top: 0; }
   /* line 49, ../sass/screen.sass */
-  .navbar-brand { width: auto; }
+  .navbar-brand { width: 300px; }
   /* line 51, ../sass/screen.sass */
   .navbar-brand img { width: 40%; } }
 /* line 54, ../sass/screen.sass */
