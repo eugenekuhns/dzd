@@ -25,6 +25,13 @@ body
 	background-color: $zappiGrey 
 	margin-bottom: 0
 	padding: 1em 0
+	li
+		letter-spacing: 3px
+		font-size: .875em
+		a
+			color: white
+			&:hover
+				border-bottom: 1px solid $zappiOrange
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover
 	background-color: $zappiGrey !important
@@ -47,9 +54,11 @@ body
 	.navbar-collapse
 		margin-top: 0
 	.navbar-brand
-		width: 300px
+		width: 340px
 		img
 			width: 40%
+	.footer p
+		text-align: left !important
 
 .homepage
 	padding-top: 40vh
@@ -118,11 +127,10 @@ body
 		&:last-of-type
 			margin-bottom: 3em
 
-.contact
-	background-color: #e0dfdf
-	padding: 2em 0
 
 .contact-intro
+	padding: 2em 0
+	background-color: #e0dfdf
 	.col-xs-12
 		&:first-of-type
 			margin-bottom: 1.5em
@@ -130,6 +138,31 @@ body
 		font-size: .875em
 		color: #8e8a88
 		margin-bottom: .5em
+
+.contact-form
+	padding: 2em 0
+	background-color: white
+	.form-group
+		margin-bottom: 2em
+	label
+		display: none
+	.form-control
+		border: none
+		border-radius: 0
+		border-bottom: 1px solid $zappiGrey
+		box-shadow: none
+		font-size: .875em
+		text-transform: uppercase
+		color: #8e8a88
+		letter-spacing: 3px
+	.btn-primary
+		background-color: $zappiOrange
+		border-color: $zappiOrange
+		text-transform: uppercase
+		letter-spacing: 2px
+		border-radius: 0
+		&:hover
+			background-color: $zappiGrey
 
 .footer
 	margin: 2em auto
